@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<title>For Aysha ✨</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" id="stars"></div><div class="petals" id="petals"></div>
+
+<div class="sorry-gate" id="sorryGate">
+ <div class="sorry-card">
+  <div class="gate-tag">A tiny message for you</div>
+  <img class="sorry-teddy" src="teddy.png" alt="Cute white teddy bear illustration">
+  <div class="sorry-title">I'm sorry, Princess Aysha 🥺</div>
+  <p class="sorry-copy">I may not always get everything right, but you mean so much to me. Can you forgive me?</p>
+  <div class="sorry-actions">
+   <button class="primary" onclick="forgiveMe()">I Forgive You ❤️</button>
+   <button class="still-angry" onclick="stillAngry()">Still Angry 😤</button>
+  </div>
+  <div class="sorry-reply" id="sorryReply" aria-live="polite"></div>
+  <div class="gate-foot">A little surprise is waiting behind this hug ✨</div>
+ </div>
+</div>
+
+<main id="birthdayMain" style="display:none">
+<header class="hero">
+ <div class="hero-inner">
+  <div class="flower">🌷 ✨ 🌸</div>
+  <div class="eyebrow">A little universe, made just for you</div>
+  <h1>Happy Birthday,<br><span>Aysha</span></h1>
+  <p class="subtitle">Today, the stars shine a little brighter… because someone as lovely as you was born.</p>
+  <button class="primary" onclick="document.getElementById('letter-section').scrollIntoView({behavior:'smooth'})">Open your little surprise ✨</button>
+ </div>
+ <div class="scroll">scroll to discover · ✦</div>
+</header>
+<section id="letter-section">
+ <div class="section-inner">
+  <div class="kicker">A note from my heart</div>
+  <h2>For my princess</h2>
+  <p class="copy">Some people make the world feel softer, brighter, and a little more magical. You are that kind of person, Aysha.</p>
+  <div class="divider">✧ ❀ ✧</div>
+  <div class="letter-wrap">
+   <div class="envelope" onclick="openLetter()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){openLetter()}">
+    <div class="seal">♥</div><p>To my princess, with all my love</p><div style="font-size:12px;color:#bd93a8;margin-top:10px">Tap to open your letter</div>
+   </div>
+   <article class="letter" id="letter">
+    My dearest Aysha,<br><br>
+    Happy Birthday, my princess. I hope this new year of your life brings you endless smiles, peaceful days, beautiful surprises, and everything your heart quietly wishes for.<br><br>
+    You deserve to feel special today and every day. If I could wrap up all the stars and give them to you, I would — but for now, I made you this little corner of the universe, just to remind you how precious you are to me.<br><br>
+    Keep shining, keep smiling, and never forget how wonderful you are.<br><br>
+    <span style="color:#b56d8c;font-style:italic">With love, always ♥</span>
+   </article>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="section-inner">
+  <div class="kicker">Make a little wish</div>
+  <h2>A birthday wish for you</h2>
+  <p class="copy">Close your eyes, make a wish, and let this little moment belong to you.</p>
+  <div class="cake">🎂</div>
+  <div class="candle-row">
+   <button class="candle" aria-label="Blow out candle one" onclick="blow(0)">🕯️</button>
+   <button class="candle" aria-label="Blow out candle two" onclick="blow(1)">🕯️</button>
+   <button class="candle" aria-label="Blow out candle three" onclick="blow(2)">🕯️</button>
+  </div>
+  <div class="hint">Tap each candle to make a wish come true ✨</div>
+  <div class="wish" id="wish"></div>
+ </div>
+</section>
+<section>
+ <div class="section-inner">
+  <div class="kicker">One last thing</div>
+  <h2>You are my favourite kind of magic</h2>
+  <p class="copy">May your days be filled with flowers, your nights with stars, and your heart with all the love and happiness you bring into the world.</p>
+  <div class="divider">🌙 <span class="sparkle">✦</span> 🌷 <span class="sparkle">✦</span> 🌙</div>
+  <p style="font-size:1.35rem;color:#a75e80;font-style:italic">Happy Birthday, Princess Aysha.</p>
+  <button class="primary" onclick="celebrate()">Send a sky full of wishes ✨</button>
+  <div class="wish" id="finalwish"></div>
+ </div>
+</section>
+<footer class="footer">Made with <span style="color:#d786a7">♥</span> just for <strong>Aysha</strong> · 11.11.2026</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
